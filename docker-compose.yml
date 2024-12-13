@@ -7,12 +7,12 @@ services:
       dockerfile: Dockerfile
     container_name: "project_zomboid_server"
     volumes:
-      - ./pz-data:/home/steam/pz-data:rw
+      - ./pz-data:/home/lorris:rw
     ports:
       - "16261:16261/udp" # Main server port
       - "8766:8766/udp"   # Steam query port
       - "27015:27015/udp" # Steam game port
     environment:
-      - PZ_SERVER_NAME=MyServer
-      - PZ_ADMIN_PASSWORD=YourAdminPassword
+      - PZ_SERVER_NAME=LaZone
+      - PZ_ADMIN_PASSWORD=rdd9bQX8JfJ
     restart: always
