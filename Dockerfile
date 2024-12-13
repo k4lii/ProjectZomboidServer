@@ -42,19 +42,9 @@ RUN mkdir -p /home/$USER/.steam/sdk64 && \
     chmod -R 770 /home/$USER/.steam
 
 
-# CMD tail -f /dev/null
-# Télécharger les fichiers spécifiques de Project Zomboid avec SteamCMD
-RUN /steamcmd/steamcmd.sh +force_install_dir /app/pz-server \
-    +login anonymous \
-    +app_update $SteamAppId validate \
-    +quit
-
-# Copier steamclient.so dans le répertoire approprié
-RUN cp -rf $WORK_DIR/pz-server/linux64/steamclient.so /home/$USER/.steam/sdk64/steamclient.so && \
-    chown -R $USER:$GROUP /home/$USER/.steam
-
 # Exposer les ports requis pour Project Zomboid
 EXPOSE 16261/udp
+EXPOSE 16262
 EXPOSE 8766/udp
 EXPOSE 27015/udp
 
