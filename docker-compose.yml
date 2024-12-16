@@ -7,7 +7,7 @@ services:
       dockerfile: Dockerfile
     container_name: "project_zomboid_server"
     volumes:
-      - ./config:/home/lorris:rw
+      # - ./config:/home/lorris:rw
       - ./server_files:/app/pz-server:rw
     ports:
       - "16261:16261/udp" # Main server port

@@ -1,6 +1,0 @@
-
-
-[2024-12-13 19:38:14] Client version: no bootstrapper found
-[2024-12-13 19:38:14] Failed to read store 'install' from '/home/lorris/Steam/config/config.vdf.tmp'
-[2024-12-13 19:38:15] Flushed store 'install' to '/home/lorris/Steam/config/config.vdf'
-[2024-12-13 19:38:16] Flushed store 'install' to '/home/lorris/Steam/config/config.vdf'

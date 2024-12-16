@@ -1,11 +1,18 @@
 FROM ubuntu:focal
 
 ENV WORK_DIR=/app
+ENV PZ_DIR="$WORK_DIR/pz-server"
+ENV PZ_LOG_DIR="$PZ_DIR/logs"
 ENV SteamAppId=380870
+ENV USER=zomboid
+ENV USER_UID=1001
+ENV GROUP_GID=1002
 
 USER root
 
-# Ajouter l'architecture i386 et installer les dépendances essentielles
+RUN groupadd -g $GROUP_GID $GROUP && \
+    useradd -u $USER_UID -g $GROUP_GID -d /home/$USER -m -s /bin/bash $USER
+
 RUN dpkg --add-architecture i386 && \
     apt update && \
     apt install -y \
@@ -18,28 +25,23 @@ RUN dpkg --add-architecture i386 && \
         libcurl4-gnutls-dev:i386 && \
     rm -rf /var/lib/apt/lists/*
 
-# Installer SteamCMD manuellement
 RUN mkdir -p /steamcmd && \
     wget -qO- https://steamcdn-a.akamaihd.net/client/installer/steamcmd_linux.tar.gz | tar -C /steamcmd -xzf -
 
-# Répertoire de travail
 WORKDIR $WORK_DIR
 
-# Copier le script d'entrée
 COPY ./entrypoint.sh ./entrypoint.sh
 RUN chmod +x ./entrypoint.sh
 
-# Préparer les répertoires nécessaires pour SteamCMD
+RUN mkdir -p $PZ_LOG_DIR
 
-RUN mkdir -p ~/.steam/sdk64 && \
-    chmod -R 770 ~/.steam
+RUN mkdir -p /home/$USER/.steam/sdk64 && \
+    chown -R $USER:$GROUP /home/$USER/.steam && \
+    chmod -R 770 /home/$USER/.steam
 
-
-# Exposer les ports requis pour Project Zomboid
 EXPOSE 16261/udp
 EXPOSE 16262
 EXPOSE 8766/udp
 EXPOSE 27015/udp
 
-# Point d'entrée
 ENTRYPOINT ["./entrypoint.sh"]
