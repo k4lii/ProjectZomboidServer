@@ -41,4 +41,4 @@ EXPOSE 16262
 EXPOSE 8766/udp
 EXPOSE 27015/udp
 
-ENTRYPOINT ["./entrypoint.sh"]
+ENTRYPOINT ["/tmp/entrypoint.sh"]
