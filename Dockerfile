@@ -8,6 +8,7 @@ ENV GROUP=zomboidgp
 ENV USER_UID=1001
 ENV GROUP_GID=1002
 ENV PZ_SERVER_NAME=FullTeam
+ENV PZ_ADMIN_PASSWORD=rdd9bQX8JfJ
 
 USER root
 
@@ -36,9 +37,9 @@ RUN mkdir -p /home/$USER/.steam/sdk64 && \
     chown -R $USER:$GROUP /home/$USER/.steam && \
     chmod -R 770 /home/$USER/.steam
 
-EXPOSE 16261/udp
+EXPOSE 16261
 EXPOSE 16262
-EXPOSE 8766/udp
-EXPOSE 27015/udp
+EXPOSE 8766
+EXPOSE 27015
 
 ENTRYPOINT ["/tmp/entrypoint.sh"]
