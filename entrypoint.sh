@@ -11,7 +11,10 @@ else
     echo "Directory is not empty. Skipping installation."
 fi
 
+# Ensure necessary directories exist
+chown -R $USER:$GROUP /home/$USER
 chown -R $USER:$GROUP $PZ_DIR
+
 cp -rf $PZ_DIR/linux64/steamclient.so /home/$USER/.steam/sdk64/steamclient.so
 exec > >(tee -a "$$PZ_DIR/logs/server.log") 2>&1
 
