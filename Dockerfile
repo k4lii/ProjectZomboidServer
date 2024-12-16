@@ -37,9 +37,8 @@ RUN mkdir -p /home/$USER/.steam/sdk64 && \
     chown -R $USER:$GROUP /home/$USER/.steam && \
     chmod -R 770 /home/$USER/.steam
 
-EXPOSE 16261
-EXPOSE 16262
-EXPOSE 8766
-EXPOSE 27015
+EXPOSE 16261/udp
+EXPOSE 16262/udp
+EXPOSE 27015/tcp
 
 ENTRYPOINT ["/tmp/entrypoint.sh"]
