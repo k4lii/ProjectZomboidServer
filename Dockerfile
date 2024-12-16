@@ -2,9 +2,9 @@ FROM ubuntu:focal
 
 ENV WORK_DIR=/app
 ENV PZ_DIR="$WORK_DIR/pz-server"
-ENV PZ_LOG_DIR="$PZ_DIR/logs"
 ENV SteamAppId=380870
 ENV USER=zomboid
+ENV GROUP=zomboidgp
 ENV USER_UID=1001
 ENV GROUP_GID=1002
 ENV PZ_SERVER_NAME=FullTeam
@@ -29,12 +29,8 @@ RUN dpkg --add-architecture i386 && \
 RUN mkdir -p /steamcmd && \
     wget -qO- https://steamcdn-a.akamaihd.net/client/installer/steamcmd_linux.tar.gz | tar -C /steamcmd -xzf -
 
-WORKDIR $WORK_DIR
-
-COPY ./entrypoint.sh ./entrypoint.sh
-RUN chmod +x ./entrypoint.sh
-
-RUN mkdir -p $PZ_LOG_DIR
+COPY ./entrypoint.sh /tmp/entrypoint.sh
+RUN chmod +x /tmp/entrypoint.sh
 
 RUN mkdir -p /home/$USER/.steam/sdk64 && \
     chown -R $USER:$GROUP /home/$USER/.steam && \
