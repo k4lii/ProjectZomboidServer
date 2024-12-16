@@ -7,18 +7,18 @@ PZ_SERVER_SCRIPT="$PZ_DIR/start-server.sh"
 
 # tail -f /dev/null
 # Télécharger les fichiers spécifiques de Project Zomboid avec SteamCMD
-# /steamcmd/steamcmd.sh +force_install_dir /app/pz-server \
-#     +login anonymous \
-#     +app_update $SteamAppId validate \
-#     +quit
+/steamcmd/steamcmd.sh +force_install_dir /app/pz-server \
+    +login anonymous \
+    +app_update $SteamAppId validate \
+    +quit
 
 # Copier steamclient.so dans le répertoire approprié
-cp -rf $WORK_DIR/pz-server/linux64/steamclient.so /home/$USER/.steam/sdk64/steamclient.so && \
-    chown -R $USER:$GROUP /home/$USER/.steam
+cp -rf $WORK_DIR/pz-server/linux64/steamclient.so ~/.steam/sdk64/steamclient.so && \
+    chown -R $USER:$GROUP ~/.steam
 
 # Ensure ownership of directories
 chown -R $USER:$GROUP $PZ_DIR
-chown -R $USER:$GROUP /home/$USER/.steam
+chown -R $USER:$GROUP ~/.steam
 
 # Create log directory if it doesn't exist
 mkdir -p $PZ_LOG_DIR
