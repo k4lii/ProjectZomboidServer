@@ -15,4 +15,4 @@ cp -rf $PZ_DIR/linux64/steamclient.so /home/$USER/.steam/sdk64/steamclient.so
 exec > >(tee -a "$PZ_LOG_DIR/server.log") 2>&1
 
 chmod +x *.sh
-exec gosu $USER:$GROUP *.sh -servername "${PZ_SERVER_NAME:-MyServer}" -adminpassword "${PZ_ADMIN_PASSWORD:-admin}"
+exec gosu $USER:$GROUP *.sh -servername "$PZ_SERVER_NAME" -adminpassword "${PZ_ADMIN_PASSWORD:-admin}"
