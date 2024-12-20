@@ -1,0 +1,56 @@
+
+
+[2024-12-16 20:32:19] Client version: no bootstrapper found
+[2024-12-16 20:32:19] Load failed: /home/zomboid/Steam/steamapps/libraryfolders.vdf.
+[2024-12-16 20:32:19] Load failed: /home/zomboid/Steam/config/libraryfolders.vdf.
+[2024-12-16 20:32:19] Steam library folders configuration will be reset.
+[2024-12-16 20:32:19] No install folder configuration files found.
+
+
+[2024-12-16 20:46:07] Client version: no bootstrapper found
+[2024-12-16 20:46:07] Load failed: /home/zomboid/Steam/steamapps/libraryfolders.vdf.
+[2024-12-16 20:46:07] Load failed: /home/zomboid/Steam/config/libraryfolders.vdf.
+[2024-12-16 20:46:07] Steam library folders configuration will be reset.
+[2024-12-16 20:46:07] No install folder configuration files found.
+
+
+[2024-12-16 20:49:24] Client version: no bootstrapper found
+[2024-12-16 20:49:24] Load failed: /home/zomboid/Steam/steamapps/libraryfolders.vdf.
+[2024-12-16 20:49:24] Load failed: /home/zomboid/Steam/config/libraryfolders.vdf.
+[2024-12-16 20:49:24] Steam library folders configuration will be reset.
+[2024-12-16 20:49:24] No install folder configuration files found.
+
+
+[2024-12-16 21:12:49] Client version: no bootstrapper found
+[2024-12-16 21:12:49] Load failed: /home/zomboid/Steam/steamapps/libraryfolders.vdf.
+[2024-12-16 21:12:49] Load failed: /home/zomboid/Steam/config/libraryfolders.vdf.
+[2024-12-16 21:12:49] Steam library folders configuration will be reset.
+[2024-12-16 21:12:49] No install folder configuration files found.
+
+
+[2024-12-18 13:01:31] Client version: no bootstrapper found
+[2024-12-18 13:01:31] Load failed: /home/zomboid/Steam/steamapps/libraryfolders.vdf.
+[2024-12-18 13:01:31] Load failed: /home/zomboid/Steam/config/libraryfolders.vdf.
+[2024-12-18 13:01:31] Steam library folders configuration will be reset.
+[2024-12-18 13:01:31] No install folder configuration files found.
+
+
+[2024-12-18 13:24:24] Client version: no bootstrapper found
+[2024-12-18 13:24:24] Load failed: /home/zomboid/Steam/steamapps/libraryfolders.vdf.
+[2024-12-18 13:24:24] Load failed: /home/zomboid/Steam/config/libraryfolders.vdf.
+[2024-12-18 13:24:24] Steam library folders configuration will be reset.
+[2024-12-18 13:24:24] No install folder configuration files found.
+
+
+[2024-12-18 13:36:01] Client version: no bootstrapper found
+[2024-12-18 13:36:01] Load failed: /home/zomboid/Steam/steamapps/libraryfolders.vdf.
+[2024-12-18 13:36:01] Load failed: /home/zomboid/Steam/config/libraryfolders.vdf.
+[2024-12-18 13:36:01] Steam library folders configuration will be reset.
+[2024-12-18 13:36:01] No install folder configuration files found.
+
+
+[2024-12-18 13:53:18] Client version: no bootstrapper found
+[2024-12-18 13:53:18] Load failed: /home/zomboid/Steam/steamapps/libraryfolders.vdf.
+[2024-12-18 13:53:18] Load failed: /home/zomboid/Steam/config/libraryfolders.vdf.
+[2024-12-18 13:53:18] Steam library folders configuration will be reset.
+[2024-12-18 13:53:18] No install folder configuration files found.

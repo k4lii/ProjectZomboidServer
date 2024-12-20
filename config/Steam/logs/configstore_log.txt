@@ -1,0 +1,41 @@
+
+
+[2024-12-16 20:32:19] Client version: no bootstrapper found
+[2024-12-16 20:32:19] Failed to read store 'install' from '/home/zomboid/Steam/config/config.vdf.tmp'
+[2024-12-16 20:32:20] Flushed store 'install' to '/home/zomboid/Steam/config/config.vdf'
+[2024-12-16 20:32:21] Flushed store 'install' to '/home/zomboid/Steam/config/config.vdf'
+
+
+[2024-12-16 20:46:07] Client version: no bootstrapper found
+[2024-12-16 20:46:07] Loaded store 'install' from '/home/zomboid/Steam/config/config.vdf' successfully
+[2024-12-16 20:46:09] Flushed store 'install' to '/home/zomboid/Steam/config/config.vdf'
+
+
+[2024-12-16 20:49:24] Client version: no bootstrapper found
+[2024-12-16 20:49:24] Loaded store 'install' from '/home/zomboid/Steam/config/config.vdf' successfully
+[2024-12-16 20:49:25] Flushed store 'install' to '/home/zomboid/Steam/config/config.vdf'
+
+
+[2024-12-16 21:12:49] Client version: no bootstrapper found
+[2024-12-16 21:12:49] Loaded store 'install' from '/home/zomboid/Steam/config/config.vdf' successfully
+[2024-12-16 21:12:50] Flushed store 'install' to '/home/zomboid/Steam/config/config.vdf'
+
+
+[2024-12-18 13:01:31] Client version: no bootstrapper found
+[2024-12-18 13:01:31] Loaded store 'install' from '/home/zomboid/Steam/config/config.vdf' successfully
+[2024-12-18 13:01:32] Flushed store 'install' to '/home/zomboid/Steam/config/config.vdf'
+
+
+[2024-12-18 13:24:24] Client version: no bootstrapper found
+[2024-12-18 13:24:24] Loaded store 'install' from '/home/zomboid/Steam/config/config.vdf' successfully
+[2024-12-18 13:24:25] Flushed store 'install' to '/home/zomboid/Steam/config/config.vdf'
+
+
+[2024-12-18 13:36:01] Client version: no bootstrapper found
+[2024-12-18 13:36:01] Loaded store 'install' from '/home/zomboid/Steam/config/config.vdf' successfully
+[2024-12-18 13:36:02] Flushed store 'install' to '/home/zomboid/Steam/config/config.vdf'
+
+
+[2024-12-18 13:53:18] Client version: no bootstrapper found
+[2024-12-18 13:53:18] Loaded store 'install' from '/home/zomboid/Steam/config/config.vdf' successfully
+[2024-12-18 13:53:19] Flushed store 'install' to '/home/zomboid/Steam/config/config.vdf'
