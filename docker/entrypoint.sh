@@ -19,4 +19,4 @@ cp -rf $PZ_DIR/linux64/steamclient.so /home/$USER/.steam/sdk64/steamclient.so
 exec > >(tee -a "$$PZ_DIR/logs/server.log") 2>&1
 
 chmod +x *.sh
-exec gosu $USER:$GROUP $PZ_DIR/*.sh -nosteam -adminpassword "${PZ_ADMIN_PASSWORD:-admin}"
+exec gosu $USER:$GROUP $PZ_DIR/*.sh "${STEAM_ENABLED:+-nosteam}" -adminpassword "${PZ_ADMIN_PASSWORD:-admin}"

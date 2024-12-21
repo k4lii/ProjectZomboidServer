@@ -39,3 +39,9 @@
         name: "{{ ansible_user }}"
         groups: docker
         append: yes
+
+    - name: Run a Docker container
+      shell: |
+        docker run -it your_docker_image_name
+      args:
+        creates: /var/run/docker.sock

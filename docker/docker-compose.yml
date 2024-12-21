@@ -13,6 +13,6 @@ services:
       - "16262:16262/udp" # Direct Connection Port
       - "27015:27015/tcp" # RCON
     environment:
-      - PZ_SERVER_NAME=LaZone
       - PZ_ADMIN_PASSWORD=rdd9bQX8JfJ
+      - STEAM_ENABLED=0
     restart: always
