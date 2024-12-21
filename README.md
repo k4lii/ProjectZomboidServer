@@ -1,0 +1,1 @@
+image docker => https://hub.docker.com/r/k4liii/pzomboid/tags
